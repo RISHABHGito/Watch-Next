@@ -22,7 +22,7 @@ I'm a self-driven learner passionate about building things for the web. Currentl
 - 🌱 Learning **React**, **Node.js**, **TypeScript** & **DSA**
 - 🛠️ Working on projects that sharpen my full-stack skills
 - 🎯 Goal: Write clean, purposeful code — one commit at a time
-- 📍 Based in **India**
+
 
 ---
 
