@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Next - TMDB Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Watch Next</h1>
+        <p class="tagline">Discover movies from the TMDB database</p>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+      <!-- SEARCH SECTION -->
+      <section class="search-section">
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search movies by title..."
+            class="search-input"
+            aria-label="Search for movies"
+          />
+          <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
+      </section>
+
+      <!-- TABS -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab-search">
+          Search Results
+        </button>
+        <button class="tab-btn" data-tab="tab-interested">Interested</button>
+      </div>
+
+      <!-- SEARCH RESULTS TAB -->
+      <section id="tab-search" class="tab-content active">
+        <h2>Search Results</h2>
+        <div id="results" class="movie-grid">
+          <p class="no-results">Search for a movie to get started!</p>
+        </div>
+      </section>
+
+      <!-- INTERESTED TAB -->
+      <section id="tab-interested" class="tab-content">
+        <h2>Interested Movies</h2>
+        <div id="interestedList" class="movie-grid">
+          <p class="no-results">No interested movies yet.</p>
+        </div>
+      </section>
+
+      <!-- INTERESTED SUMMARY -->
+      <section class="interested-summary">
+        <h3>Interested movies</h3>
+        <p>
+          You have <span id="interestedCount">0</span> movies marked as
+          “Interested”.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2025 Watch Next. Data provided by TMDB.</p>
+    </footer>
+
+    <!-- MOVIE DETAILS MODAL -->
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span id="modalClose" class="close">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
